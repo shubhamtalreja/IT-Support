@@ -1,0 +1,584 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.customers tr:nth-child(even){background-color: #f2f2f2;}
+
+.customers th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color: #04AA6D !important;
+color: white;
+}
+
+.view-button{
+border: none;
+border-radius: 5px;
+color: #fff;
+padding: 5px 5px;
+font-size: small;
+font-family: Arial, Helvetica, sans-serif;
+background-color: dodgerblue;
+cursor: pointer;
+}
+.view-button:hover{
+background-color: rgb(10, 103, 196);
+}
+
+/* ALL USERS ADMIN  */
+.customers tr:nth-child(even){background-color: #f2f2f2;}
+
+.customers tr:hover {background-color: #ddd;}
+
+.customers th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color: white !important;
+color: black;
+}
+.delete{
+  border-radius: 5px;
+  border:none;
+  margin-left: 20px;
+  padding: 5px 5px;
+  background-color: tomato;
+  color: white;
+  cursor: pointer;
+  font-size: small;
+  transition: transform .5s;
+}
+.delete:hover{
+  transform: scale(1.1);
+}
+.edit{
+  background-color: tomato;
+  color: white;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border:none;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: small;
+  transition: transform .5s;
+}
+.edit:hover{
+  transform: scale(1.1);
+}
+.customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.customers td, .customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* ALL USERS ADMIN  */
+
+/* *********************************************** */
+
+/* NEW USER ADMIN */
+.newuser{
+  width:40%;
+  margin:30px 200px 0px 0px;
+  height:100px;
+  float: right;
+}
+.maincontainer{
+  display: flex;
+  flex-direction: row;
+}
+.label{
+  text-transform: uppercase;
+  color: lightslategray;
+  font-size: larger;
+  font-family: 'Open Sans',sans-serif;
+}
+.errorText{
+  color: #f05252;
+}
+.err{
+  border: 1px solid #f05252 !important; 
+}
+.newInput{
+  border: 1px solid #ebebeb;
+  width: 90%;
+  padding: 10px 32px 10px 10px;
+  border-radius: 4px;
+  line-height: 20px;
+  font-family: OpenSans;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: OpenSans,Arial;
+}
+.text{
+  color: #aaa;
+  font-family: 'Open Sans',sans-serif;
+  text-align: left;
+}
+
+/* NEW USER ADMIN */
+
+/* EDIT USER ADMIN */
+.update-btn[disabled]
+{
+  cursor: not-allowed;
+  opacity: 0.65;
+  transition: transform .5s;
+
+}
+.update-ben[disabled]:hover{
+  transform: scale(1.1);
+}
+
+/* ************************************************* */
+
+/* SINGLE TICKET ADMIN */
+
+.submitbtn{
+  width:100px;
+  height: 50px;
+  background-color: rgb(148, 211, 253);
+  border: none;
+  margin: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submitbtn1{
+  margin-top: 1rem;
+}
+.open{
+  display: block !important;
+}
+.add-new-user{
+  transition: transform .5s !important;
+}
+.add-new-user:hover{
+  transform: scale(1.1) !important;
+}
+.update-btn[disabled]{
+  cursor: not-allowed !important;
+  opacity: 0.65;
+  transition: transform .5s !important;
+}
+.update-btn[disabled]:hover{
+  transform: scale(1.1) !important;
+}
+.update-btn{
+  transition: transform .5s !important;
+}
+.update-btn:hover{
+  transform: scale(1.1) !important;
+}
+.add-new-user[disabled]{
+  cursor: not-allowed !important;
+  opacity: 0.65;
+  transition: transform .5s !important;
+}
+.add-new-user[disabled]:hover{
+  transform: scale(1.1) !important;
+}
+.close {
+  color: #aaa;
+  right: 0;
+  font-size: 28px;
+  font-weight: bold;
+} 
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.select{
+  height: 50px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.dropdown.circle a{
+  text-decoration: none;
+}
+
+/* ************************************************************** */
+
+/* SIGN IN SCREEN */
+.label{
+  text-transform: uppercase;
+  color: #aaa;
+  font-family: 'Open Sans',sans-serif;
+}
+.errorText{
+  color: #f05252;
+}
+.err{
+  border: 1px solid #f05252 !important; 
+}
+.loginInput{
+  border: 1px solid #ebebeb;
+  width: 100%;
+  padding: 10px 32px 10px 10px;
+  border-radius: 4px;
+  line-height: 20px;
+  font-family: OpenSans;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: OpenSans,Arial;
+}
+.loginbtn{
+  border: 1px solid #ebebeb;
+  width: 100%;
+  padding: 10px 32px 10px 10px;
+  border-radius: 4px;
+  line-height: 20px;
+  font-family: OpenSans;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: OpenSans,Arial;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(145, 196, 245);
+}
+
+/* ************************************* */
+
+.circle{
+  width: 40px;
+  height: 40px;
+}
+.circle span {
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 9px 10px;
+}
+.avatars{
+  background-color: white;
+  border-radius: 50%;
+  height:40px;
+  width:40px;
+}
+
+.avatars::after {
+  content: "";
+  position: relative;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid black;
+}
+.dropdown-menu{
+  margin-left:-7rem;
+}
+.dropdown-menu {
+  position: absolute;
+  transform: translateX(-69%);
+  width: 0%;
+}
+
+/* **************************************  */
+
+
+.submitbtn {
+  margin-right: 0.5rem;
+}
+
+
+
+
+.formcontainer{
+  width:100%;
+  background-color: #edf2f5;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center 150px;
+  height: 650px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  align-items:center ;
+}
+.formInput:invalid:required {
+  background-image: linear-gradient(to right, pink, lightgreen);
+}
+.create-button[disabled] {
+  cursor: not-allowed !important;
+  opacity: 0.65;
+}
+.create-button{
+  transition: transform .5s;
+}
+.create-button:hover{
+  transform: scale(1.1);
+}
+.Choose-files{
+  transition: transform .5s;
+}
+.Choose-files:hover{
+  transform: scale(1.05);
+}
+/* ************************************************ */
+/* usersinglepreviousticket css */
+.not-allowed[disabled] {
+  cursor: not-allowed !important;
+  opacity: 0.65;
+}
+
+.SaveBtn{
+  width:85px;
+  height: 40px;
+  margin-left: 193px;
+  margin-top: -5px;
+  background-color: rgb(148, 211, 254);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#b1:hover{
+  background-color: lightblue;
+}
+#b2:hover{
+  background-color: lightblue;
+}
+.saveBtn{
+  width:85px;
+  height: 40px;
+  margin-left: 168px;
+  margin-top: 0px;
+  background-color: rgb(148, 211, 254);
+  border: none;
+  border-radius: 5px;
+}
+.cancelBtn{
+  width:85px;
+  height: 40px;
+  margin-left: 19px;
+  background-color: rgb(148, 211, 254);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Btn{
+margin-top: 3rem;
+background-color: rgb(148, 211, 253);
+width:40%;
+cursor: pointer;
+}
+
+
+
+.user-info {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.user-info p {
+  margin: 10px 0;
+}
+.back-link {
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #007bff;
+  text-decoration: none;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+
+/* PAGINATION PREV AND NEXT CSS */
+
+.page-item.disabled{
+  cursor: not-allowed;
+  opacity: 0.65;
+  transition: transform 0.5s ease;
+}
+.page-item.disabled:hover{
+  transform: scale(1.1);
+}
+.page-link{
+  cursor: pointer;
+  transition: transform 0.5s ease;
+
+}
+.page-link:hover{
+  transform: scale(1.1);
+
+}
+.Hover{
+  transition: transform 0.5s ease;
+
+}
+.Hover:hover{
+  transform: scale(1.1);
+
+}
+
+/* CURRENT TICKETS && Resolved Tickets && All Tickets */
+.view-column{
+  cursor:pointer
+}
+
+/* Modal images */
+.image_Link{
+  cursor:pointer
+}
+
+.input-group {
+  position: relative;
+}
+.input-group .form-control {
+  padding-right: 40px;
+}
+.input-eye-password{
+  position: relative;
+}
+.input-eye-password .eyeoffon  {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+
+/* ========= Modal Css ======== */
+.edit-form form {
+  margin-top: 20px;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-form button:hover {
+  background-color: #0069d9;
+}
+
+.modal-content {
+  z-index: 1050;
+}
+.modal .modal-backdrop {
+    opacity: 0.5;
+}
+.close{
+  color:black;
+}
+
+.modal .modal-dialog .modal-content .modal-header {
+  background: #ddd;
+  color: #fff;
+  padding: 5px 10px;
+}
+.modal .modal-dialog .modal-content .modal-body p {
+  margin-bottom: 0px;
+}
+.modal .modal-dialog .modal-content .modal-footer {
+  padding: 5px 10px;
+}
+.modal .modal-dialog .modal-content .modal-footer .btn {
+  padding: 3px 8px;
+}
+.successModal .modal-dialog .modal-content .modal-header {
+  background: #22c55e;
+}
+.errorModal .modal-dialog .modal-content .modal-header {
+  background: #dc3545;
+}
+.termsCondtions-modal .modal-dialog .modal-content .modal-body p {
+  margin-bottom: 15px;
+}
+/* ====== */
+.ticket-Image-modal .modal-dialog .modal-content .modal-header,
+.termsCondtions-modal .modal-dialog .modal-content .modal-header {
+  background: #3b82f6;
+}
+.imagemodal .modal-dialog .modal-content .modal-header{
+  background: #3b82f6;
+}
+.ticket-Image-modal .modal-dialog .modal-content .modal-body>img  {
+  height:450px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+.ticket-Image-modal .modal-dialog .modal-content .modal-body  .ticketbox .ticket-image {
+  margin: 5px;
+  display: inline-block;
+}
+.ticket-Image-modal .modal-dialog .modal-content .modal-body  .ticketbox .ticket-image .image{
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 4px 15px #ccc;
+}
+.ticket-Image-modal .modal-dialog .modal-content .modal-body  .ticketbox .ticket-image img{
+  width:100%;
+  height:100%; 
+} 
+.ticket-Image-modal .modal-dialog .modal-content .modal-body  .ticketbox .ticket-image a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  color: #000;
+  display: block;
+}
+.ticket-Image-modal .modal-dialog .modal-content .modal-body  .ticketbox .ticket-image a:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+
+/* =========== Toaster ============= */
+.p-dialog-mask .p-dialog .p-dialog-header {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  background: #dc3545;
+  color: #fff;
+}
+.p-dialog-mask .p-dialog .p-dialog-header .p-dialog-title{
+  font-size: 16px;
+}
+.p-dialog-mask .p-dialog .p-dialog-header .p-dialog-header-icon{
+  color:#fff;
+}
+.p-dialog-mask .p-dialog .p-dialog-content {
+  padding: 10px;
+}
+.p-dialog-mask .p-dialog .p-dialog-footer {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+}
+.p-dialog-mask .p-dialog .p-dialog-footer .p-button {
+  padding: 5px 10px;
+}
+

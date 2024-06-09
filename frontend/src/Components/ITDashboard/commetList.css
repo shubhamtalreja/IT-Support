@@ -1,0 +1,34 @@
+
+
+
+ .commentTicketId {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+ .commentText,
+.commentBy,
+.commentDate {
+  margin-bottom: 0.5rem;
+}
+
+/* .commentListStyles .row {
+  margin: 10px 0;
+} */
+
+.wrapperDiv .font-weight-bold {
+  font-weight: bold;
+}
+
+.wrapperDiv hr {
+  margin: 10px 0;
+  border: 0;
+  height: 1px;
+  background: #dee2e6;
+}
+
+.wrapperDiv .Accordion.Header[aria-disabled="true"] {
+  color: #868e96;
+  /* Gray text color */
+  cursor: not-allowed;
+}
