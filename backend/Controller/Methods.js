@@ -15,8 +15,6 @@ const nodemailer = require("nodemailer");
 const excel = require("exceljs");
 const { replaceInString, setTransport } = require("../utils");
 const { validate } = require("../validate");
-
-require("dotenv").config({ path: "./config/secrets.env" });
 const JWT_KEY = process.env.JWT_KEY;
 
 //********************USER METHODS****************************** */

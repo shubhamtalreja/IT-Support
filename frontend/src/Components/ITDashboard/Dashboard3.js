@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import baseURL from "../../config/default.json";
+import ENV_CONFIG from "../../config/ENV_CONFIG";
 import Cookies from "js-cookie";
 import jwt_decode from "jwt-decode";
 import { Chart, registerables } from "chart.js";
@@ -15,7 +15,7 @@ import AllUser from "../AdminDashboard/AllUser/AllUser";
 Chart.register(...registerables);
 
 const Dashboard3 = () => {
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const [ticketscount, setTicketscount] = useState();
   const [AllUserIt, setAlluserIt] = useState();
   const [AllUserStatusOpen, setAlluserStatusOpen] = useState();

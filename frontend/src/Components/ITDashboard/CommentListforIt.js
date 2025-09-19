@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 
 import Cookies from "js-cookie";
-import baseURL from "../../config/default.json";
+import ENV_CONFIG from "../../config/ENV_CONFIG";
 import "./commetList.css";
 import CustomComponentForComments from "../CustomComponentsForComments/CustomComponentForComments";
 export default function CommentListforIt() {
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const [getTotalCommentDataForIT, setTotalCommentDataForIT] = useState([]);
   const [commentDataforIT, setCommentDataforIT] = useState();
   useEffect(() => {

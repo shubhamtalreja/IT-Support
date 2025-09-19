@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import baseURL from "./../../config/default.json";
+import ENV_CONFIG from "../../config/ENV_CONFIG";
 import Cookies from "js-cookie";
 import jwt_decode from "jwt-decode";
 import { CustomContext } from "../../App";
@@ -46,7 +46,7 @@ const ProfilePage = () => {
     };
     fetchUserRole();
   }, []);
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const handleImageChange = async (e) => {
     if (e.target.name === "file") {
       for (let i = 0; i < e.target.files.length; i++) {

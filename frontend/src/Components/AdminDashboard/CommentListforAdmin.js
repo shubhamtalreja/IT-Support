@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import baseURL from "../../config/default.json";
+import ENV_CONFIG from "../../config/ENV_CONFIG";
 import Cookies from "js-cookie";
 import { Chart, registerables } from "chart.js";
 import CustomComponentForComments from "../CustomComponentsForComments/CustomComponentForComments";
 Chart.register(...registerables);
 
 const CommentListforAdmin = () => {
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const [totalCommentDataForAdmin, setTotalCommentDataForAdmin] =
     useState(null);
   const [commentDataForAdmin, setCommentDataForAdmin] = useState([]);

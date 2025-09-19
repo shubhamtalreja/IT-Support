@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import baseURL from "../../../config/default.json";
+import ENV_CONFIG from "../../../config/ENV_CONFIG";
 import Cookies from "js-cookie";
 import jwt_decode from "jwt-decode";
 
@@ -8,7 +8,7 @@ import CustomTable from "../../CustomTable/CustomTable";
 const Homepage = () => {
   const [tickets, setTickets] = useState([]);
   const [loading, setLoading] = useState(false);
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const navigate = useNavigate();
   if (!Cookies.get("token")) {
     navigate("/");

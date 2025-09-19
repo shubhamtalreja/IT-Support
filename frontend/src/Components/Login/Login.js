@@ -1,12 +1,13 @@
 import React, { useState, useEffect,useRef, useContext } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import baseURL from "../../config/default.json"
+import ENV_CONFIG from "../../config/ENV_CONFIG"
 import Cookies from 'js-cookie';
 import {CustomContext} from '../../App'
 
 const Login = () => {
   const {setImageURL} = useContext(CustomContext);  
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
+  console.log('baseURL', baseUrl)
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
