@@ -12,22 +12,22 @@ A web application for managing IT support tickets, users, and admin operations.
 ## Screenshots
 
 ### Login Page
-![Login Page](./src/assets/login-page.png)
+![Login Page](./frontend/src/assets/login-page.png)
 
 ### User Dashboard
-![User Dashboard](./src/assets/user-dashboard.png)
+![User Dashboard](./frontend/src/assets/user-dashboard.png)
 
 ### Admin Dashboard 
-![Admin Dashboard](./src/assets/admin-dashboard.png)
+![Admin Dashboard](./frontend/src/assets/admin-dashboard.png)
 
 #### All Users
-![All Users](./src/assets/all-users.png)
+![All Users](./frontend/src/assets/all-users.png)
 
 #### Add New User
-![Add New User](./src/assets/add-user.png)
+![Add New User](./frontend/src/assets/add-user.png)
 
 #### Email Options
-![Email Options](./src/assets/email-options.png)
+![Email Options](./frontend/src/assets/email-options.png)
 
 ## Getting Started
 
@@ -42,7 +42,7 @@ A web application for managing IT support tickets, users, and admin operations.
    ```
 4. Start the backend:
    ```bash
-   node server.js
+   npm start
    ```
 
 ## Technologies Used
