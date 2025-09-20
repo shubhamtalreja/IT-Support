@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import baseURL from "../../../config/default.json";
+import ENV_CONFIG from "../../../config/ENV_CONFIG";
 import "primeicons/primeicons.css";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.css";
@@ -10,7 +10,7 @@ import Cookies from "js-cookie";
 import jwt_decode from "jwt-decode";
 
 const AllUser = () => {
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const [users, setUsers] = useState([]);
   const navigate = useNavigate();
   const [a, setA] = useState(false);

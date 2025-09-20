@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import baseURL from "../../config/default.json";
+import ENV_CONFIG from "../../config/ENV_CONFIG";
 import Cookies from "js-cookie";
 import jwt_decode from "jwt-decode";
 import { Chart, registerables } from "chart.js";
@@ -14,7 +14,7 @@ import InprogressTicket from "../InprogressTicket/InprogressTicket";
 Chart.register(...registerables);
 
 const Dashboard2 = () => {
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const [ticketscount, setTicketscount] = useState();
   const [AllUser, setAlluser] = useState();
   const [AllUserStatusOpen, setAlluserStatusOpen] = useState();

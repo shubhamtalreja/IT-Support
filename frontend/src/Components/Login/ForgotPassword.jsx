@@ -1,8 +1,8 @@
 import React, { useState, useEffect,useRef } from "react";
 import { useNavigate, useParams,Link } from "react-router-dom";
-import baseURL from "../../config/default.json";
+import ENV_CONFIG from "../../config/ENV_CONFIG";
 const ForgotPassword = () => {
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const history = useNavigate();
   const [password, setPassword] = useState();
   const [confirmPassword, setConfirmPassword] = useState();

@@ -1,6 +1,6 @@
 import { React, useEffect, useRef, useState } from "react";
 import FormData from "form-data";
-import baseURL from "../../../config/default.json";
+import ENV_CONFIG from "../../../config/ENV_CONFIG";
 import { useNavigate, Link } from "react-router-dom";
 import Cookies from "js-cookie";
 import jwt_decode from "jwt-decode";
@@ -16,7 +16,7 @@ const UserTicketForm = () => {
     reporter: jwt_decode(Cookies.get("token")).name,
     reporterId: jwt_decode(Cookies.get("token")).employeeID,
   };
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const [error, setError] = useState({});
   const [open, setOpen] = useState(false);
   const [formData, setFormData] = useState(user);

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import baseURL from "../../../config/default.json";
+import ENV_CONFIG from "../../../config/ENV_CONFIG";
 import Cookies from "js-cookie";
 
 const EditUser = () => {
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const navigate = useNavigate();
   const { employeeID } = useParams();
   const [error, setError] = useState({});

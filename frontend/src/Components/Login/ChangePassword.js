@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import baseURL from "../../config/default.json"
+import ENV_CONFIG from "../../config/ENV_CONFIG"
 
 const ChangePassword = () => {
   
-    const baseUrl = baseURL.baseUrl;
+    const baseUrl = ENV_CONFIG.BASE_URL;
     const [formData,setFormData]=useState({})
     const [open,setOpen]=useState(false)
     const [error,setError]=useState({})

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import baseURL from "../../config/default.json";
+import ENV_CONFIG from "../../config/ENV_CONFIG";
 import Cookies from "js-cookie";
 import jwt_decode from "jwt-decode";
 import CustomTable from "../CustomTable/CustomTable";
 const AllTicketforIt = () => {
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const [tickets, setTickets] = useState([]);
   const [ticketData, setTicketData] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);

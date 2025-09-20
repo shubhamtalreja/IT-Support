@@ -1,10 +1,10 @@
 import React, { useState,useEffect,useRef} from 'react';
 import { useNavigate } from 'react-router-dom';
-import baseURL from "../../config/default.json"
+import ENV_CONFIG from "../../config/ENV_CONFIG"
 
 const ResetPassword = () => {
 
-    const baseUrl = baseURL.baseUrl;
+    const baseUrl = ENV_CONFIG.BASE_URL;
     const [email, setEmail] = useState();
     const [message, setMessage] = useState();
     const [firstTime, setFirstTime] = useState(true);

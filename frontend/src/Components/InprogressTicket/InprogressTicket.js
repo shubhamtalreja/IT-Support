@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
-import baseURL from "../../config/default.json";
+import ENV_CONFIG from "../../config/ENV_CONFIG";
 import Cookies from "js-cookie";
 import jwt_decode from "jwt-decode";
 import useDebounce from "../lib/hooks/useDebounce";
@@ -10,7 +10,7 @@ const InprogressTicket = () => {
   const [tickets, setTickets] = useState([]);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   if (!Cookies.get("token")) {
     navigate("/");
   }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import baseURL from "../../../config/default.json";
+import ENV_CONFIG from "../../../config/ENV_CONFIG";
 import Cookies from "js-cookie";
 import jwt_decode from "jwt-decode";
 
@@ -8,7 +8,7 @@ import CustomTable from "../../CustomTable/CustomTable";
 
 const AllTicketUser = () => {
   const [tickets, setTickets] = useState([]);
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const navigate = useNavigate();
 
   if (!Cookies.get("token")) {

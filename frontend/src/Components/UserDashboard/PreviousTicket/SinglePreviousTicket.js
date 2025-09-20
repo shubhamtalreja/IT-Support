@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
-import baseURL from "../../../config/default.json";
+import ENV_CONFIG from "../../../config/ENV_CONFIG";
 import Cookies from "js-cookie";
 import jwt_decode from "jwt-decode";
 import "./singlePreviousTicket.css";
@@ -18,7 +18,7 @@ const SinglePreviousTicket = () => {
     password: jwt_decode(Cookies.get("token")).Password,
   };
   let employeeId = user.employeeID;
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const { ticketId } = useParams();
   const navigate = useNavigate();
   const [ticket, setTicket] = useState();

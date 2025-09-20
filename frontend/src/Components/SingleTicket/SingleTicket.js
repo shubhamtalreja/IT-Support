@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate, Link, useFetcher } from "react-router-dom";
-import baseURL from "../../config/default.json";
+import ENV_CONFIG from "../../config/ENV_CONFIG";
 
 import { useRef } from "react";
 import Cookies from "js-cookie";
@@ -10,7 +10,7 @@ import CommentBox from "../CommentBox/CommentBox";
 import TaskDetails from "../Task Details/TaskDetails";
 import TicketDetails from "../TicketDetails/TicketDetails";
 const SingleTicket = () => {
-  const baseUrl = baseURL.baseUrl;
+  const baseUrl = ENV_CONFIG.BASE_URL;
   const { ticketId } = useParams();
   const navigate = useNavigate();
   const user = {

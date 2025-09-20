@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express")
 const cors = require("cors")
 const bodyParser = require("body-parser");
@@ -8,6 +9,7 @@ const authentication = require("./middlewares/Authentication")
 const app = express();
 const logger = require('./logger');
 const cookieParser=require('cookie-parser');
+const PORT = process.env.PORT || 8080;
 
 app.use(cookieParser());
 
@@ -21,7 +23,7 @@ app.get("/", (req, res) => {
 app.use("/user", userController)
 app.use("/ticket",ticketController)
 app.use('/upload',express.static(__dirname + '/upload'));
-app.listen(8000, async () => {
+app.listen(PORT, async () => {
     try{
         await connection
         logger.info("Database connection established");
