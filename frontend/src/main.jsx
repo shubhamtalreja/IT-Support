@@ -9,9 +9,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- <BrowserRouter>   
-<App/>
-</BrowserRouter>
-    
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+
 );
 reportWebVitals();
