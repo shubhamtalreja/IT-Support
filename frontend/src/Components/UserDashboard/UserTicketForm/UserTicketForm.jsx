@@ -1,5 +1,4 @@
 import { React, useEffect, useRef, useState } from "react";
-import FormData from "form-data";
 import ENV_CONFIG from "../../../config/ENV_CONFIG";
 import { useNavigate, Link } from "react-router-dom";
 import Cookies from "js-cookie";
